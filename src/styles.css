@@ -1,0 +1,46 @@
+.gh-retry-btn {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid var(--borderColor-danger-emphasis, #cf222e);
+  border-radius: 6px;
+  color: var(--fgColor-danger, #cf222e);
+  background-color: transparent;
+  margin-right: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.gh-retry-btn:hover:not(:disabled) {
+  background-color: var(--bgColor-danger-emphasis, #cf222e);
+  color: var(--fgColor-onEmphasis, #fff);
+}
+
+.gh-retry-btn:focus-visible {
+  outline: 2px solid var(--focus-outlineColor, #0969da);
+  outline-offset: -2px;
+}
+
+.gh-retry-btn.gh-retry-loading {
+  border-color: var(--borderColor-muted, #d0d7de);
+  color: var(--fgColor-muted, #656d76);
+  cursor: default;
+}
+
+.gh-retry-btn.gh-retry-success {
+  border-color: var(--borderColor-success-emphasis, #1a7f37);
+  color: var(--fgColor-success, #1a7f37);
+  cursor: default;
+}
+
+.gh-retry-btn.gh-retry-error {
+  border-color: var(--borderColor-danger-emphasis, #cf222e);
+  color: var(--fgColor-danger, #cf222e);
+  background-color: var(--bgColor-danger-muted, #ffebe9);
+  cursor: default;
+}
